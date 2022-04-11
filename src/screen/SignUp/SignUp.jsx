@@ -3,6 +3,11 @@ import { Row, Col } from 'antd'
 import signUpImage from '../../assets/Group968.png'
 
 function SignUp() {
+
+    function load() {
+        window.location.href = "/add-bill";
+    }
+
   return (
     <>
       <Row>
@@ -11,8 +16,10 @@ function SignUp() {
         </Col>
         <Col span={12}>
         <div className="mt-10 sm:mt-0">
-                    <h2>Create Account</h2>
+                <div className="w-11/12 py-3 p-4 ml-3 mt-3 mt-6">
+                    <h1 className="m-0 mt-3 text-lg font-bold">Create Account</h1>
                     <p>Build an exceptional business</p>
+                </div>
                 <div className="mt-5 md:mt-0 md:col-span-2">
                 <form action="#" method="POST">
                     <div className="shadow overflow-hidden sm:rounded-md">
@@ -55,10 +62,11 @@ function SignUp() {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="col-span-6">
+                            <button onClick={load} type="button" className="justify-center w-full h-12 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Sign Up</button>
                         </div>
-                    </div>
-                    <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                        <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Save</button>
+                        </div>
                     </div>
                     </div>
                 </form>

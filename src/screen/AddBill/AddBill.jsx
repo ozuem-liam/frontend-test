@@ -51,9 +51,7 @@ function AddBill() {
                                             <option selected value="#">USD - U.S dollar</option>
                                             <option value="#">#</option>
                                             <option value="#">#</option>
-                                            <option val<div className="w-11/12 py-3 p-4 ml-3 mt-3 mt-6">
-                <h1 className="m-0 mt-3 text-lg font-bold">View Report</h1>
-            </div>ue="#">#</option>
+                                            <option value="#">#</option>
                                         </select>
                                     </div>
 
